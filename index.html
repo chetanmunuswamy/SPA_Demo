@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+	<script src = "https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-rc.2/angular-route.min.js"></script>
+
+	<script src = "routes.js"></script>
+	<script src = "controller.js"></script>
+	
+	
+</head>
+<body ng-app = "spaDemo">
+
+	Main Page before view
+	<br/>
+
+	<div ng-view = "">
+
+	</div>
+
+	<p>custom directive</p>
+	
+	<my-First-Directive></my-First-Directive>
+</body>
+</html>

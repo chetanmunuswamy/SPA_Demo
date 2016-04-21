@@ -1,0 +1,20 @@
+<div class="container">
+		<br/> View 2 <br/>
+		<input type = "text" ng-model = "nameBind"/>
+		<p id = "result">{{ nameBind }}</p>
+		<ul>
+			<li ng-repeat = "variables in customers | filter:nameBind | orderBy:'city'">{{ variables.name }} - {{ variables.city | uppercase}} </li>
+		</ul>
+
+		<br/>
+		Customer name:
+		<input type = "text" ng-model = "newCustomer.name"/>
+		<br/>
+		City:
+		<input type = "text" ng-model = "newCustomer.city"/>
+		<br/>
+		<button ng-click = "addCustomer()">Add Customer</button>
+
+		<br/>
+		<a href = "#/view1">View 1</a>
+</div>

@@ -1,0 +1,10 @@
+<div class="container">
+		<br/> View 1 <br/>
+		<input type = "text" ng-model = "nameBind"/>
+		<p id = "result">{{ nameBind }}</p>
+		<ul>
+			<li ng-repeat = "variables in customers | filter:nameBind | orderBy:'city'">{{ variables.name }} - {{ variables.city | uppercase}} </li>
+		</ul>
+
+		<a href = "#/view2">View 2</a>
+</div>
